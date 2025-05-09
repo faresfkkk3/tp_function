@@ -6,6 +6,9 @@ def analyze_expenses(*args,**kwargs):
     print("total exp",total)
     print("unamed expences:",len(args))
     print("named expences:",len(kwargs))
+    sorted_named = dict(sorted(kwargs.items()))
+    print("summary:",sorted_named)
+
     
     
 analyze_expenses(20, 45, 35, taxi=15, resto=40, cinema=25)
